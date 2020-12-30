@@ -5,7 +5,7 @@ import json
 
 text_list = []
 
-n = 222
+n = 68
 
 for i in range(1, n):
     r1 = requests.get('https://www.ptt.cc/bbs/AllTogether/search?page=' + str(i) + '&q=%5B%E5%BE%B5%E7%94%B7%5D')
@@ -48,7 +48,6 @@ for i in range(1, n):
                     p = p.next_sibling
                 
                 text_list.append(text)
-    print(i)
                 
 #%%
 with open('text.json', 'w') as f:
