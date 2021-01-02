@@ -5,9 +5,9 @@ import json
 
 text_list = []
 
-n = 68
+n = 67
 
-for i in range(1, n):
+for i in range(1, n+1):
     r1 = requests.get('https://www.ptt.cc/bbs/AllTogether/search?page=' + str(i) + '&q=%5B%E5%BE%B5%E7%94%B7%5D')
     soup1 = BeautifulSoup(r1.text, 'html.parser')
 
